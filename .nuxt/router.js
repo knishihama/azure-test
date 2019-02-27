@@ -7,8 +7,6 @@ const _23fd0b42 = () => interopDefault(import('..\\pages\\artists\\index.vue' /*
 const _73c0c040 = () => interopDefault(import('..\\pages\\bounties\\index.vue' /* webpackChunkName: "pages_bounties_index" */))
 const _b0625bb6 = () => interopDefault(import('..\\pages\\products\\index.vue' /* webpackChunkName: "pages_products_index" */))
 const _116a96d4 = () => interopDefault(import('..\\pages\\rules\\index.vue' /* webpackChunkName: "pages_rules_index" */))
-const _516fd143 = () => interopDefault(import('..\\pages\\sample.vue' /* webpackChunkName: "pages_sample" */))
-const _28c9a21f = () => interopDefault(import('..\\pages\\todo.vue' /* webpackChunkName: "pages_todo" */))
 const _3350c18b = () => interopDefault(import('..\\pages\\tradelaw\\index.vue' /* webpackChunkName: "pages_tradelaw_index" */))
 const _42d364f2 = () => interopDefault(import('..\\pages\\account\\my\\index.vue' /* webpackChunkName: "pages_account_my_index" */))
 const _2e712c06 = () => interopDefault(import('..\\pages\\account\\signup\\index.vue' /* webpackChunkName: "pages_account_signup_index" */))
@@ -100,14 +98,6 @@ export function createRouter() {
       path: "/rules",
       component: _116a96d4,
       name: "rules"
-    }, {
-      path: "/sample",
-      component: _516fd143,
-      name: "sample"
-    }, {
-      path: "/todo",
-      component: _28c9a21f,
-      name: "todo"
     }, {
       path: "/tradelaw",
       component: _3350c18b,
