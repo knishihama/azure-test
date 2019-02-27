@@ -15,16 +15,8 @@ const argv = parseArgs(process.argv.slice(2), {
   unknown: parameter => false
 })
 
-const port =
-  argv.port ||
-  process.env.PORT ||
-  process.env.npm_package_config_nuxt_port ||
-  "3000"
-const host =
-  argv.hostname ||
-  process.env.HOST ||
-  process.env.npm_package_config_nuxt_host ||
-  "127.0.0.1"
+const port = process.env.PORT || '3000'
+const host = process.env.HOST || '127.0.0.1'
 
 module.exports = {
   build: {
