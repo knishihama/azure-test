@@ -15,8 +15,16 @@ const argv = parseArgs(process.argv.slice(2), {
   unknown: parameter => false
 })
 
-const port = process.env.PORT || '3000'
-const host = process.env.HOST || '127.0.0.1'
+const port =
+  argv.port ||
+  process.env.PORT ||
+  process.env.npm_package_config_nuxt_port ||
+  "3000"
+const host =
+  argv.hostname ||
+  process.env.HOST ||
+  process.env.npm_package_config_nuxt_host ||
+  "127.0.0.1"
 
 module.exports = {
   build: {
@@ -142,7 +150,7 @@ module.exports = {
   axios: {
     //baseUrl :'https://wishhub-dev-api.azurewebsites.net/api/'
     //baseUrl :'https://uliiq-test-manual.azurewebsites.net'
-    baseUrl :'http://127.0.0.1:3000'
-    //baseUrl :'http://localhost:8080'
+    //baseUrl : 'http://127.0.0.1:3000'
+    //baseUrl : 'http://localhost:8080'
   }
 }
