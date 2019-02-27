@@ -142,7 +142,7 @@ module.exports = {
   axios: {
     //baseUrl :'https://wishhub-dev-api.azurewebsites.net/api/'
     //baseUrl :'https://uliiq-test-manual.azurewebsites.net'
-    //baseUrl : 'http://127.0.0.1:3000'
-    //baseUrl : 'http://localhost:8080'
+    baseUrl :'http://127.0.0.1:3000'
+    //baseUrl :'http://localhost:8080'
   }
 }
