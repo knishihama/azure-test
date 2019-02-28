@@ -149,7 +149,7 @@ module.exports = {
   /* TODO:APIサーバのURLが決まったらここにベースのURLを記入する 例：https://hogehogeapi */
   axios: {
     //baseUrl :'https://wishhub-dev-api.azurewebsites.net/api/'
-    //baseUrl :'https://uliiq-test-manual.azurewebsites.net'
+    baseUrl :'https://{sitename}.azurewebsites.net'
     //baseUrl : 'http://127.0.0.1:3000'
     //baseUrl : 'http://localhost:8080'
   }
