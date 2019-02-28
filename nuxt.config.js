@@ -1,10 +1,4 @@
-//import parseArgs from "minimist";
 const parseArgs = require('minimist')
-// SPAモードを有効。未設定（デフォルト）ではSSRモード TODO:SPAモードが不要となったら消す
-/*
-module.exports = {
-  mode: 'spa'
-}*/
 
 const argv = parseArgs(process.argv.slice(2), {
   alias: {
@@ -26,6 +20,12 @@ const host =
   process.env.npm_package_config_nuxt_host ||
   "127.0.0.1"
 
+// azure環境の場合、baseUrlはazureのURLを設定する
+var azureurl
+  if (process.env.HTTP_HOST) {
+    azureurl = "https://" + process.env.HTTP_HOST ;
+  }
+
 module.exports = {
   build: {
     extend (config, { isClient, loaders: { vue } }) {
@@ -37,6 +37,7 @@ module.exports = {
   },
   env: {
     baseUrl:
+      azureurl ||
       process.env.BASE_URL ||
       `http://${host}:${port}`
   },
@@ -146,11 +147,4 @@ module.exports = {
     name: "WishHub's Page",
     lang: 'ja'
   },
-  /* TODO:APIサーバのURLが決まったらここにベースのURLを記入する 例：https://hogehogeapi */
-  axios: {
-    //baseUrl :'https://wishhub-dev-api.azurewebsites.net/api/'
-    baseUrl :'https://{sitename}.azurewebsites.net'
-    //baseUrl : 'http://127.0.0.1:3000'
-    //baseUrl : 'http://localhost:8080'
-  }
 }
