@@ -21,11 +21,9 @@ const host =
   "127.0.0.1"
 
 // azure環境の場合、baseUrlはazureのURLを設定する
-console.log("★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★azureurl")
 var azureurl
   if (process.env.WEBSITE_HOSTNAME) {
     azureurl = "https://" + process.env.WEBSITE_HOSTNAME ;
-    console.log("★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★azureurl設定(" + azureurl + ")")
   }
 
 module.exports = {
@@ -39,6 +37,7 @@ module.exports = {
   },
   env: {
     baseUrl:
+      azureurl ||
       process.env.BASE_URL ||
       `http://${host}:${port}`
   },
