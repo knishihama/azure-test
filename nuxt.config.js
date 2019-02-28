@@ -37,7 +37,6 @@ module.exports = {
   },
   env: {
     baseUrl:
-      azureurl ||
       process.env.BASE_URL ||
       `http://${host}:${port}`
   },
@@ -147,4 +146,8 @@ module.exports = {
     name: "WishHub's Page",
     lang: 'ja'
   },
+  axios :{
+    baseUrl:
+      `${azureurl}` || `http://${host}:${port}`
+  }
 }
