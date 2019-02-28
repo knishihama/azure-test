@@ -147,7 +147,6 @@ module.exports = {
     lang: 'ja'
   },
   axios :{
-    baseURL: "https://azure-test-serverjs.azurewebsites.net"
-    //baseURL: azureurl || `http://${host}:${port}`
+    baseURL: azureurl || `http://${host}:${port}`
   }
 }
