@@ -22,8 +22,8 @@ const host =
 
 // azure環境の場合、baseUrlはazureのURLを設定する
 var azureurl
-  if (process.env.HTTP_HOST) {
-    azureurl = "https://" + process.env.HTTP_HOST ;
+  if (process.env.WEBSITE_HOSTNAME) {
+    azureurl = "https://" + process.env.WEBSITE_HOSTNAME ;
   }
 
 module.exports = {
@@ -147,6 +147,7 @@ module.exports = {
     lang: 'ja'
   },
   axios :{
-    baseURL: azureurl || `http://${host}:${port}`
+    baseURL: "https://azure-test-serverjs.azurewebsites.net"
+    //baseURL: azureurl || `http://${host}:${port}`
   }
 }
