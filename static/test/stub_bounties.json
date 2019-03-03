@@ -1,0 +1,6 @@
+[
+    {"bountiesId":1, "artistName":"アーティスト名００１", "artistImageUrl":"/test/img/theme/team-1-800x800.jpg", "bountiesName":"バウンティー名００１", "bountiesDescription":"バウンティーの説明です。"},
+    {"bountiesId":2, "artistName":"アーティスト名００２", "artistImageUrl":"/test/img/theme/team-2-800x800.jpg", "bountiesName":"バウンティー名００２", "bountiesDescription":"バウンティーの説明です。"},
+    {"bountiesId":3, "artistName":"アーティスト名００３", "artistImageUrl":"/test/img/theme/team-3-800x800.jpg", "bountiesName":"バウンティー名００３", "bountiesDescription":"バウンティーの説明です。"},
+    {"bountiesId":4, "artistName":"アーティスト名００４", "artistImageUrl":"/test/img/theme/team-4-800x800.jpg", "bountiesName":"バウンティー名００４", "bountiesDescription":"バウンティーの説明です。"}
+]

@@ -71,13 +71,17 @@ module.exports = {
       }
     ],
     link: [
-      /* Favicon */
+      //TODO:各スタイルシートの整理をする
+      /*
+      ** 初期取り込み
+      */ 
+      // Favicon
       {
         rel: "icon",
         type: "image/png",
-        href: "~/assets/img/brand/favicon.png"
+        href: "~assets/img/brand/favicon.png"
       },
-      /* Fonts */
+      // Fonts
       {
         rel: "stylesheet",
         href: "https://use.fontawesome.com/releases/v5.6.3/css/all.css",
@@ -90,26 +94,15 @@ module.exports = {
       },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=M+PLUS+1p"
+        src: "https://fonts.googleapis.com/css?family=M+PLUS+1p"
       },
     ],
-    /* slick 適用調査
     script: [
-    { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js' },
-      //Core
-      //{ src: '~/assets/vendor/jquery/jquery.min.js' },
-      { src: '~/assets/vendor/popper/popper.min.js' },
-      { src: '~/assets/vendor/bootstrap/bootstrap.min.js' },
-      //Optional JS
-      { src: '~/assets/vendor/headroom/headroom.min.js' },
-      { src: '~/assets/vendor/onscreen/onscreen.min.js' },
-      { src: '~/assets/vendor/nouislider/js/nouislider.min.js' },
-      { src: '~/assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js' },
-      // WishHub JS
-      { src: '~/assets/js/argon.js?v=1.0.1' },
-      { src: '~/assets/js/slick.min.js' }
+      /*
+      ** V0218
+      */
+      { src: "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" }
     ]
-    */
   },
   /*
   ** Customize the progress-bar color
@@ -119,21 +112,30 @@ module.exports = {
   ** Build configuration
   */
   css: [
-    /* Icons */
-    "~/assets/vendor/nucleo/css/nucleo.css",
-    "~/assets/vendor/font-awesome/css/font-awesome.min.css",
-    /* WishHub CSS */
-    "~/assets/css/main.css",
-    /* JS CSS */
-    "~/assets/css/slick.css",
-    "~/assets/css/slick-theme.css"
+    //TODO:各スタイルシートの整理をする
+    /*
+    ** 初期取り込み
+    */
+    // Icons
+    "~assets/vendor/nucleo/css/nucleo.css",
+    "~assets/vendor/font-awesome/css/font-awesome.min.css",
+    // WishHub CSS
+    "~assets/css/main.css",
+    // JS CSS
+    "~assets/css/slick.css",
+    "~assets/css/slick-theme.css",
+    /*
+    ** V0218
+    */
+    "~assets/V0218/dest/style.css",
   ],
   build: {},
   modules: [
     "@nuxtjs/axios",
     ///TODO: PWA化の検証が完了したら有効化する
-    //"@nuxtjs/pwa",
+    "@nuxtjs/pwa",
     "~/modules/typescript.js",
+    //"~/modules/V0218/js/scroll.js"
   ],
   plugins:[
     '~/plugins/axios.ts'
@@ -148,6 +150,10 @@ module.exports = {
     lang: 'ja'
   },
   axios :{
-    baseURL: azureurl || `http://${host}:${port}`
+    baseURL:azureurl || `http://${host}:${port}`,
+    proxy:true
+  },
+  proxy: {
+    '/test' : azureurl || `http://${host}:${port}`
   }
 }
