@@ -15,10 +15,9 @@ import '..\\assets\\V0218\\dest\\style.css'
 
 import _6f6c098b from '..\\layouts\\default.vue'
 import _6c337422 from '..\\layouts\\my.vue'
-import _781743a2 from '..\\layouts\\top.1.vue'
 import _1a3b299f from '..\\layouts\\top.vue'
 
-const layouts = { "_default": _6f6c098b,"_my": _6c337422,"_top.1": _781743a2,"_top": _1a3b299f }
+const layouts = { "_default": _6f6c098b,"_my": _6c337422,"_top": _1a3b299f }
 
 export default {
   head: {"title":"WishHub（ウィッシュハブ）｜アイドル・アーティストの「お願い」をファンの行動で「叶える」","meta":[{"name":"robots","content":"noindex"},{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1, shrink-to-fit=no"},{"name":"description","content":"ブロックチェーンにより行動支援を見える化する、まったく新しいサービスです。"},{"name":"author","content":"Contents Works Inc."},{"hid":"description","name":"description","content":"Nuxt.js project"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"WishHub's Page"},{"hid":"theme-color","name":"theme-color","content":"#3B8070"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"WishHub's Page"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"WishHub's Page"},{"hid":"og:description","name":"og:description","property":"og:description","content":"\u003E Nuxt.js TypeScript project"}],"link":[{"rel":"icon","type":"image\u002Fpng","href":"~assets\u002Fimg\u002Fbrand\u002Ffavicon.png"},{"rel":"stylesheet","href":"https:\u002F\u002Fuse.fontawesome.com\u002Freleases\u002Fv5.6.3\u002Fcss\u002Fall.css","integrity":"sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s\u002F","crossorigin":"anonymous"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=M+PLUS+Rounded+1c"},{"rel":"stylesheet","src":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=M+PLUS+1p"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.69a5a03a.json"}],"script":[{"src":"https:\u002F\u002Fajax.googleapis.com\u002Fajax\u002Flibs\u002Fjquery\u002F3.1.0\u002Fjquery.min.js"}],"style":[],"htmlAttrs":{"lang":"ja"}},
